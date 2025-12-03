@@ -1,0 +1,26 @@
+/* SECCIÓN MAIN/HOME */
+
+main img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 11px;
+    opacity: 0.7;
+}
+
+main h2 {
+    color: #615538;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.bienvenidos p {
+    font-size: 20px;
+    text-align: justify;
+}

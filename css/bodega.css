@@ -43,7 +43,7 @@ header img {
 header div {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centra verticalmente h1 y h2 */
+  justify-content: center; 
 }
 
 header h1 {
@@ -143,43 +143,11 @@ main h2 {
     box-sizing: border-box;
 }
 
-/* .testimonios {
-    width: 25%;
-} */
-
-/* .columnas {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-} */
-
 .bienvenidos p {
     font-size: 20px;
     text-align: justify;
 }
 
-/* .testimonio {
-    background-color: #ece5d3;
-    padding: 16px;
-    border-radius: 15%;
-    }
-.testimonio .cita {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 22px;
-    background-color: rgb(146, 146, 134);
-    display: block;
-    border-radius: 15%;
-
-} */
-/* .testimonio .autor {
-    font-size: 10px;
-    text-align: center;
-    border-radius: 15%;
-    background-color: rgb(146, 146, 134);
-    display: block;
-    margin: 12px 0 ;
-} */
 /* FIN SECCIÓN MAIN  */
 
 /* HISTORIA */
