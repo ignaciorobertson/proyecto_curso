@@ -106,6 +106,26 @@ nav ul li a:hover{
     background-color: #737556;
 }
 
+nav ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #dfd796; /* dorado suave */
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
 nav ul li a.activo{
     background-color: #dfd796;
 }
