@@ -4,8 +4,7 @@ export default function Home() {
     <div className="">
       <main className="holder">
           <div>
-              <img src="\img\toneles 2 sepia recorte separador.jpg" alt="toneles_sepia"></img>
-              {/* <img src="img/toneles 2 sepia recorte separador.jpg" alt="toneles_sepia"> */}
+          <img src="\img\toneles 2 sepia recorte separador.jpg" alt="toneles_sepia"></img>
           </div>
           <div className="columnas">
               <h2>Bienvenidos</h2>
