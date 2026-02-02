@@ -1,13 +1,21 @@
 /* VARIETALES */
 
 .varietales {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 16px;
-    margin: 16px 0;
-    display: flex;
-    gap: 32px;
-    align-items: center;
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: 
+    opacity 0.7s ease-out,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.varietales.reverse {
+  flex-direction: row-reverse;
+  transform: translateX(60px);
+}
+
+.varietales.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .varietales .info h4{
@@ -26,6 +34,7 @@
 .varietales img{
     border-radius: 13px;
     display: block;
+    margin: 0 auto;
     max-width: 225px; 
 }
 

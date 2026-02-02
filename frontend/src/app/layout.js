@@ -10,17 +10,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-        <header>
+        <header className="site-header">
+          <div className="header-inner">
           <img src="\img\logo LA + montaña.jpg" alt="Bodegas Robertson" />
-          <div>
+            <div className="brand">
             <h1>Luz de los Andes</h1>
-            <h2>·WINES·</h2>
+              <span className="divider"></span>
+              <h2>·WINES·</h2>
+          </div>
           </div>
         </header>
         <Nav />
-        {children}
+
+        <main class="page-transition">
+          {children}
+        </main>
+
         <footer>
-          <p>Diseñado por Ignacio Robertson - &copy; año</p>
+          <p>Diseñado por Ignacio Robertson - &copy; 2026</p>
         </footer>
       </body>
     </html>

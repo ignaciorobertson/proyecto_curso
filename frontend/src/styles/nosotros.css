@@ -1,70 +1,107 @@
-/* HISTORIA // NOSOTROS */
+/* HISTORIA */
+
+.historia {
+  margin-bottom: 60px;
+}
 
 .historia p {
-    font-size: 12px;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 800px;
 }
+
+/* REVEAL SOLO PARA HISTORIA */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* STAFF */
 
 .personas {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
+
+/* CARD PERSONA */
 
 .persona {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 18%;
-    text-align: center;
-    padding: 13px;
-    box-sizing: border-box;
-    background-color: rgb(193, 197, 154);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 18%;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: rgb(193, 197, 154);
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  transition-delay: calc(var(--i) * 0.15s);
 }
+
+.persona.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HOVER */
+
+.persona {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.persona:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGEN */
 
 .persona img {
-  width: 120px;        
-  height: 120px;       
-  border-radius: 50%;  
-  object-fit: cover;   
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  display: block;
-  margin: 0 auto 10px auto; 
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 12px;
 
-}
-.persona img:hover {
-    opacity: 1;
+  opacity: 0.8;
+  transition: all 0.5s ease;
 }
 
-/* .imagenes_reservas img {
-    width: 100%;
-    border-radius: 11px;
-    margin-bottom: 20px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+.persona:hover img {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
-.imagenes_reservas img:hover {
-    opacity: 1;
-} */
+/* TEXTO */
 
-
-
-.persona h5,
-.persona h6{
-    margin: 0;
-    font-weight: normal;
-    color: #64683f;
-}
 .persona h5 {
-    font-size: 14px;
-    margin-top: 5px;
+  font-size: 14px;
+  margin-top: 8px;
+  color: #4f5334;
 }
+
 .persona h6 {
-    font-size: 11px;
-    font-style: italic;
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #6b6f45;
 }
+
 .persona p {
-    color: #666;
-    font-size: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #555;
 }

@@ -1,0 +1,38 @@
+.turismo-block {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 60px 0;
+  opacity: 0;
+}
+
+.turismo-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.turismo-img img {
+  max-width: 420px;
+  border-radius: 14px;
+  transform: scale(0.95);
+  transition: transform 1s ease;
+}
+
+.turismo-text {
+  transform: translateY(30px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 0;
+}
+
+/* Cuando entra en viewport */
+.turismo-block.show {
+  opacity: 1;
+}
+
+.turismo-block.show .turismo-img img {
+  transform: scale(1);
+}
+
+.turismo-block.show .turismo-text {
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -20,10 +20,21 @@ export default async function Novedad() {
     return (
       <section className="holder">
         <h2>Novedades</h2>
-        {novedades.map(item => <NovedadItem
+        {/* {novedades.map(item => <NovedadItem
           key={item.id}
           title={item.titulo} subtitle={item.subtitulo} imagen={item.imagen} body={item.cuerpo} />)
-        }
+        } */}
+
+        {novedades.map((item, index) => (
+          <NovedadItem
+            key={item.id}
+            title={item.titulo}
+            subtitle={item.subtitulo}
+            imagen={item.imagen}
+            body={item.cuerpo}
+            style={{ "--i": index }}
+          />
+        ))}
       </section>
     );
   } catch (error) {

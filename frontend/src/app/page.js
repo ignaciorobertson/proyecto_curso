@@ -3,10 +3,10 @@ export default function Home() {
   return (
     <div className="">
       <main className="holder">
-          <div>
+        <div className="fade-up">
           <img src="\img\toneles 2 sepia recorte separador.jpg" alt="toneles_sepia"></img>
           </div>
-          <div className="columnas">
+        <div className="columnas fade-up fade-delay-1">
               <h2>Bienvenidos</h2>
               <p>
                   En el corazón de Luján de Cuyo, Mendoza, nace Luz de los Andes, una bodega donde la tradición vitivinícola se une con la sutileza de la luz andina. Cada vino refleja la esencia de nuestra tierra: el carácter noble de la montaña, la calma de los valles

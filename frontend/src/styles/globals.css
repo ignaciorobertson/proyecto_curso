@@ -22,6 +22,68 @@ body::before {
   z-index: -1; 
 }
 
+/* HEADER */
+
+.site-header {
+  background-color: rgba(236, 229, 211, 0.9);
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-inner img {
+  width: 130px;
+  height: auto;
+  border-radius: 18px;
+  opacity: 0.85;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.header-inner img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/* BRAND */
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.brand h1 {
+  font-size: 52px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  color: #615538;
+  letter-spacing: 1px;
+}
+
+.brand .divider {
+  width: 60px;
+  height: 1px;
+  background-color: #b9b02e;
+}
+
+.brand h2 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin: 0;
+  color: #b9b02e;
+}
+
 header {
   background-color: #ece5d3;
   padding: 16px 32px;
@@ -142,4 +204,22 @@ footer{
 .holder{
     max-width: 960px;
     margin: 0 auto;
+}
+
+
+/* TRANSICIÓN ENTRE SECCIONES */
+
+.page-transition {
+  animation: pageFade 0.6s ease both;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
