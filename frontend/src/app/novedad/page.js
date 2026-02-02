@@ -7,8 +7,8 @@ export const metadata = {
 
 export default async function Novedad() {
   try {
-    const data = await fetch(`http://localhost:3000/api/novedades`, { cache: 'no-store' });
-    // console.log("Fetch response:", data);
+    const data = await fetch(`${process.env.API_BASE_URL}/api/novedades`, { cache: 'no-store' });
+    // const data = await fetch(`http://localhost:3000/api/novedades`, { cache: 'no-store' });
     if (!data.ok) {
       throw new Error(`HTTP error! status: ${data.status}`);
     }

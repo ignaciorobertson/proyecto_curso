@@ -30,7 +30,9 @@ export default function Reservas() {
 
             <h2>Vení a vivír una experiencia única</h2>
 
-            <FormReserva />
+              {/* VER SI ES ESTA: */}
+              <FormReserva postUrl={`${process.env.API_BASE_URL}/api/reservas`} />
+              {/* <FormReserva postUrl={`https://localhost:3000/api/reservas`} /> */}
         </div>
     </main>
 
